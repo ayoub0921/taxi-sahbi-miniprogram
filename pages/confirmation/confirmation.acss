@@ -1,0 +1,106 @@
+.page-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.positionIcon{
+  position: absolute;
+  /* top: 394px;
+  left: 296px; */
+  width: 50px;
+  height: 50px;
+  top: 300px;
+  right: 20px;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.map-placeholder {
+  font-size: 24px;
+  color: #777;
+}
+
+
+
+.fisrt-icons {
+  width: px;
+  width: 36px;
+  height: 20px;
+  margin: 0 auto 8px auto;
+}
+
+
+.client{
+
+  width: 27px;
+  height: 38px;
+
+}
+
+
+.coupon{
+  width: 29px;
+  height: 26px;
+}
+
+.down{
+  width: 13px;
+  height: 13px;
+}
+
+.ellipse{
+
+  width: 10px;
+  height: 10px;
+}
+
+.separator{
+  width: 3px;
+  height: 26px;
+  margin-left: 3.5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.position{
+
+  width: 15px;
+  height: 21px;
+}
+
+
+.trajet{
+
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+
+.taxiType{
+
+  padding-top: 30px;
+}
+
+.label{
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 1);
+  line-height: 1.8;
+
+}
+
+.value{
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 15px;
+}

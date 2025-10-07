@@ -1,0 +1,13 @@
+.blue-section__image {
+  width: 170px;
+  height: 70px;
+  display: block;
+  margin: 35px auto;
+  object-fit: cover;
+}
+
+
+.headText{
+
+  text-align: center;
+}

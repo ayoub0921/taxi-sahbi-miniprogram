@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.map {
+  width: 100%;
+  height: 280px;
+}
+
+.card {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.welcome {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.username {
+  color: #007aff;
+}
+
+.taxi-types, .options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.type-btn, .option-btn {
+  background-color: #007aff;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.location, .destination {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+}

@@ -1,0 +1,45 @@
+<view class="page-wrapper">
+  <image mode="scaleToFill" class="headerLogo" src="/assets/images/header-logo.png" />
+
+  <view class="blue-section">
+    <view class="greenText blue-section-headText headText center">
+      Notez
+      <text class="whiteText">votre chauffeur</text>
+    </view>
+
+    <view class="rating">
+      <block a:for="{{[0,1,2,3,4]}}" a:key="index">
+        <image
+          class="star-icon"
+          src="{{index < rating ? '/assets/images/star-filled.png' : '/assets/images/star-empty.png'}}"
+          data-index="{{index}}"
+          onTap="setRating"
+        />
+      </block>
+    </view>
+
+    <view class="commit-container">
+      <view class="commit">
+        <image class="commit-icon" mode="aspectFit" src="/assets/images/commenter.png" />
+
+        <input
+          class="rating-input"
+          placeholder="Laisser un commentaire..."
+          value="{{comment}}"
+          onInput="onCommentInput"
+        />
+
+        <image
+          class="commit-icon"
+          mode="aspectFit"
+          src="/assets/images/whiteclose.png"
+          onTap="onClearComment"
+        />
+      </view>
+    </view>
+
+
+
+    <button class="btn success-button">Envoyer</button>
+  </view>
+</view>

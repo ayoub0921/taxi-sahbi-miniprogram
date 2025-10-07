@@ -1,0 +1,52 @@
+<view class="page-wrapper">
+  <image mode="scaleToFill" class="headerLogo"  src="/assets/images/header-logo.png" />
+  <!-- Recap Content -->
+  <scroll-view scroll-y="true" class="recap-scroll">
+    <view class="recap-container">
+      <text class="recap-title">RÉCAPITULATIF</text>
+
+      <view class="recap-items">
+        <view class="recap-item">
+          <text class="item-label">Prix de la course</text>
+          <text class="item-value">18 Dhs</text>
+        </view>
+
+        <view class="recap-item">
+          <text class="item-label">Distance estimée</text>
+          <text class="item-value">2.19 Km</text>
+        </view>
+
+        <view class="recap-item">
+          <text class="item-label">Temps de trajet</text>
+          <text class="item-value">00:09:32</text>
+        </view>
+
+        <view class="recap-item">
+          <text class="item-label">Coupon</text>
+          <text class="item-value">TAXI20</text>
+        </view>
+
+        <view class="recap-item">
+          <text class="item-label">Total</text>
+          <text class="item-value total">14,4 Dhs</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- Payment Section (Fixed Bottom) -->
+  <view class="recap-payment blue-section">
+    <view class="recap-payment-header">
+      <image class="recap-payment-icon" mode="scaleToFill" src="/assets/images/Price.png" />
+      <text class="recap-payment-title">Choisir le mode de paiement</text>
+    </view>
+
+    <button size="default" type="primary" class="success-button btn">
+      💳 Carte bancaire
+    </button>
+
+    <button size="default" type="primary" class="success-button btn btn-cash">
+      💸 Cash
+    </button>
+  </view>
+</view>

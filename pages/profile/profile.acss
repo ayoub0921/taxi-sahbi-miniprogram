@@ -1,0 +1,93 @@
+/* index.acss */
+.container {
+  height: 100vh;
+  padding: 20px;
+  padding-bottom: 160px; 
+  overflow-y: auto;
+  position: relative;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+/* Boutons en bas */
+.footer-actions {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+  padding-bottom: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 8px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.addNewCard {
+
+  border-top: 1px solid var(--color-primary);
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
+.option.logout {
+
+  color: hsla(0, 100%, 42%, 1);
+}
+
+.option image{
+
+  margin-right: 10px;
+}
+.option.addNewCard image {
+  width: 30px;
+  height: 30px;
+}
+
+
+.option.updatePassword image{
+
+  width: 15px;
+  height: 20px;
+
+}
+
+.option.logout image{
+
+  width: 15px;
+  height: 14px;
+
+}

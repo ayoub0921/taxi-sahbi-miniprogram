@@ -1,0 +1,37 @@
+<view class="page-wrapper">
+  <image mode="scaleToFill" class="headerLogo"  src="/assets/images/header-logo.png" />
+  <view class="map-container">
+    <text class="map-placeholder">Map Component</text>
+  </view>
+  <view class="blue-section">
+    <view>
+      <view class="info-row justify-between">
+        <view class="driver flex-section">
+          <image   mode="scaleToFill" src="/assets/images/driver.png" />
+          <view class="flex-col driverName">
+            <text>Youssef</text>
+            <text>Albachir</text>
+          </view>
+        </view>
+        <image  mode="scaleToFill" src="/assets/images/Call.png" />
+      </view>
+      <view class="taxi-info">
+        <view class="justify-between taxi">
+          <view class="taxi-name flex-col">
+            <text class="title">N° du taxi :</text>
+            <text class="value">87658</text>
+          </view>
+          <view class="flex-col">
+            <text class="title">Type de voiture :</text>
+            <text class="value">DACIA LOGAN</text>
+          </view>
+        </view>
+        <view class="flex-col permis">
+          <text class="title">N° permis de confiance :</text>
+          <text class="value">A007532</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

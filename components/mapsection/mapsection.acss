@@ -1,0 +1,5 @@
+.my-component {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 200px;
+}

@@ -1,0 +1,54 @@
+<view class="page-wrapper">
+  <image mode="scaleToFill" class="headerLogo" src="/assets/images/header-logo.png" />
+  <view class="map-container">
+    <image mode="scaleToFill" class="positionIcon"  src="/assets/images/positionIcon.png" />
+    <text class="map-placeholder">Map</text>
+  </view>
+
+  <view class="confirmation blue-section">
+    <view class="justify-between">
+      <view class="flex-section">
+        <image class="fisrt-icons" mode="scaleToFill" src="/assets/images/Vector.png" />
+        <view class="flex-col">
+          <text class="label">Trajet</text>
+          <text class="value"> 3,2 km</text>
+        </view>
+      </view>
+      <view class="flex-section">
+        <image class="fisrt-icons" mode="scaleToFill" src="/assets/images/Price.png" />
+        <view class="flex-col">
+          <text class="label" >Prix estimé</text>
+          <text class="value">25 Dhs</text>
+        </view>
+      </view>
+    </view>
+    <view class="taxiType justify-between">
+      <view class="flex-section">
+        <image class="client" mode="scaleToFill" src="/assets/images/whiteclient.png" />
+        <text class="value">Taxi Privatisé</text>
+      </view>
+      <view class="flex-section">
+        <image class="coupon" mode="scaleToFill" src="/assets/images/coupon.png" />
+        <text class="value">Coupon</text>
+        <image class="down" mode="scaleToFill" src="/assets/images/down.png" />
+      </view>
+    </view>
+    <view class="trajet">
+      <view class="flex-section">
+        <image class="ellipse" mode="scaleToFill" src="/assets/images/ellipse.png" />
+        <text class="value">Rue d’ariege, Qu. des Hopitaux</text>
+      </view>
+      <image  class="separator" mode="scaleToFill" src="/assets/images/separator.png" />
+      <view class="flex-section">
+        <image class="position" mode="scaleToFill" src="/assets/images/Position.png" />
+        <text class="value">130 Av. 2 Mars</text>
+      </view>
+    </view>
+    <view class="flex-section">
+      <button size="default" type="primary" class="btn success-button">
+        Confirmer
+      </button>
+      <button size="default" type="primary" class="btn danger-button">Annuler</button>
+    </view>
+  </view>
+</view>

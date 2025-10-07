@@ -1,0 +1,16 @@
+<view class="page-wrapper">
+  <image mode="scaleToFill" class="headerLogo"  src="/assets/images/header-logo.png" />
+  <view class="map-container">
+    <text class="map-placeholder">Map</text>
+  </view>
+
+  <view class="blue-section flex-col center">
+    <view class="greenText blue-section-headText headText">
+      En attente
+      <text class="whiteText">d’un taxi</text>
+    </view>
+      <!-- <text class="blue-section-headText headText">En attente d’un taxi</text> -->
+    <image class="blue-section__image" mode="scaleToFill"
+           src="/assets/images/taxi_loading.png" />
+  </view>
+</view>

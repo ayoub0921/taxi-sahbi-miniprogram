@@ -1,0 +1,52 @@
+{
+  "subPackageBuildType": "shared",
+  "pages": [
+    "pages/index/index",
+    "pages/address/address",
+    "pages/confirmation/confirmation",
+    "pages/waiting/waiting",
+    "pages/inRide/inRide",
+    "pages/endTrip/endTrip",
+    "pages/recap/recap",
+    "pages/rating/rating",
+    "pages/thanks/thanks",
+    "pages/profile/profile",
+    "pages/trips/trips",
+    "pages/hello/hello",
+    "pages/menu/menu",
+    "pages/trajets/trajets",
+    "pages/help/help",
+    "pages/messages/messages",
+    "pages/updatePassword/updatePassword",
+    "pages/addNewCard/addNewCard"
+  ],
+  "window": {
+    "backgroundImageUrl": "/assets/images/header-logo.png"
+  },
+  "entryPagePath": "pages/index/index",
+  "tabBar": {
+    "textColor": "#666666",
+    "selectedColor": "#00AAFF",
+    "backgroundColor": "#FFFFFF",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "Accueil",
+        "icon": "/assets/images/home-icon.png",
+        "activeIcon": "/assets/images/home-icon-active.png"
+      },
+      {
+        "pagePath": "pages/trips/trips",
+        "name": "Mes courses",
+        "icon": "/assets/images/trips-icon.png",
+        "activeIcon": "/assets/images/trips-icon-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "name": "Profil",
+        "icon": "/assets/images/profile-icon.png",
+        "activeIcon": "/assets/images/profile-icon-active.png"
+      }
+    ]
+  }
+}

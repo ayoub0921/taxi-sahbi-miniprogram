@@ -1,0 +1,18 @@
+<view>
+  <button size="default" type="primary" onTap="goToHello">hello</button>
+  <button size="default" type="primary" onTap="confirmTaxi">Confirmation</button>
+  <button size="default" type="primary" onTap="waitTaxi">waiting</button>
+  <button size="default" type="primary" onTap="goToInRide">inRide</button>
+  <button size="default" type="primary" onTap="goToEndTrip">endTrip</button>
+  <button size="default" type="primary" onTap="goToRecap">recap</button>
+  <button size="default" type="primary" onTap="goToRating">Rating</button>
+  <button size="default" type="primary" onTap="goThanks">thanks</button>
+  <!-- <map
+  id="taxiMap"
+  longitude="31.2304"
+  latitude="-7.5898"
+  scale="14"
+  show-location
+  style="width: 100%; height: 100%;"
+></map> -->
+</view>

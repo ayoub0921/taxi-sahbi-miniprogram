@@ -1,0 +1,9 @@
+<view class="menu">
+  <image class="close-icon" mode="scaleToFill" src="/assets/images/close.png" onTap="closeMenu" />
+
+  <view class="menuItems">
+    <view class="items" a:for="{{ menuItems }}" a:key="id" data-url="{{item.url}}" onTap="navigateToPage">
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>

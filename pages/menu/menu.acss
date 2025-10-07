@@ -1,0 +1,34 @@
+.menu {
+
+  background-color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+
+.menuItems {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+
+}
+
+.items {
+
+  line-height: 2;
+}
+
+.menuItems text {
+  color: hsla(0, 0%, 0%, 1);
+  font-size: 22px;
+  font-weight: 900;
+}

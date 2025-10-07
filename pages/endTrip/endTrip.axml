@@ -1,0 +1,25 @@
+<view class="page-wrapper">
+  <image mode="scaleToFill" class="headerLogo"  src="/assets/images/header-logo.png" />
+  <view class="map-container">
+    <text class="map-placeholder">Map</text>
+  </view>
+
+  <view class="blue-section">
+    <view class="greenText blue-section-headText headText">
+      TAXI SAHBI
+      <text class="whiteText">VOUS REMERCIE !</text>
+    </view>
+    <!-- <text class="blue-section-title">TAXI SAHBI VOUS REMERCIE !</text> -->
+    <view class="trip-info">
+      <view class="flex-section info-row">
+        <image src="/assets/images/Position.png" mode="scaleToFill" />
+        <text>130 Av. 2 Mars</text>
+      </view>
+      <view class="flex-section info-row">
+        <image src="/assets/images/priceIcon.png" mode="scaleToFill" />
+        <text>Prix de la course : 18.0 Dhs</text>
+      </view>
+    </view>
+    <button class="btn success-button">Payer</button>
+  </view>
+</view>

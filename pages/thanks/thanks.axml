@@ -1,0 +1,18 @@
+<view class="container">
+
+  <image mode="scaleToFill" class="headerLogo headLogo" src="/assets/images/header-logo.png" />
+
+
+  <image src="/assets/images/thanks.png" class="thanks" />
+
+  <image src="/assets/images/logo.png" class="logo" />
+
+  <view class="thanks-btns">
+    <button class="btn recommend success-button" onTap="onRecommend">
+      Recommander l’appli à un ami
+    </button>
+    <button class="btn primary-button" onTap="goHome">
+      Retour à la page d’accueil
+    </button>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="title">MON PROFIL</view>
+
+  <!-- Form inputs -->
+  <view class="form-group">
+    <label>Prénom</label>
+    <input type="text" placeholder="Votre prénom" />
+  </view>
+  <view class="form-group">
+    <label>Nom</label>
+    <input type="text" placeholder="Votre nom" />
+  </view>
+  <view class="form-group">
+    <label>Ville</label>
+    <picker mode="selector" range="{{cities}}" onChange="bindCityChange">
+      <view class="picker">Sélectionnez une ville: {{cities[cityIndex]}}</view>
+    </picker>
+  </view>
+  <view class="form-group">
+    <label>Adresse mail</label>
+    <input type="email" placeholder="exemple@mail.com" />
+  </view>
+
+  <!-- Option: Add card -->
+  <view onTap="addNewCard" class="option addNewCard">
+    <image src="/assets/images/bank_card.png" mode="scaleToFill"></image>
+    <text>Ajouter une nouvelle carte</text>
+  </view>
+
+  <!-- Footer actions -->
+  <view class="footer-actions">
+    <view class="option updatePassword" onTap="updatePassword">
+      <image src="/assets/images/updatePassword.png" mode="scaleToFill"></image>
+      <text>Modifier mon mot de passe</text>
+    </view>
+    <view class="option logout" onTap="logout">
+      <image src="/assets/images/logout.png" mode="scaleToFill"></image>
+      <text>Se déconnecter</text>
+    </view>
+    <button class="success-button" bindtap="onSubmit" type="primary">Valider</button>
+  </view>
+</view>

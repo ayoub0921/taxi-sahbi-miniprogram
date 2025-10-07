@@ -1,0 +1,104 @@
+<view class="page-wrapper">
+  <image mode="scaleToFill" class="headerLogo" src="/assets/images/header-logo.png" />
+  <view class="map-container">
+    <image mode="scaleToFill" class="positionIcon" src="/assets/images/positionIcon.png" />
+    <view class="menu-icon" onTap="showMenu">
+      <image class="menu-img" mode="scaleToFill" src="/assets/images/profile.png" />
+    </view>
+  </view>
+
+
+  <view class="map-container">
+    <image mode="scaleToFill" src="/assets/images/map.png" />
+  </view>
+
+  <view class="blue-section">
+    <view class="greenText blue-section-headText"> Bonjour
+      <text class="whiteText">Amine</text>
+    </view>
+    <!-- Loop through taxis array using a:for -->
+    <view class="flex-section taxiType">
+      <view
+        a:for="{{taxis}}"
+        a:key="id"
+        data-id="{{item.id}}"
+        onTap="selectTaxi"
+        class="taxi-item {{selectedTaxi == item.id ? 'selected-taxi-item' : ''}} flex-col"
+      >
+        <image class="taxi-image" src="{{item.image}}" mode="aspectFit"></image>
+        <text class="{{selectedTaxi == item.id ? 'selected-taxi-text' : ''}}"> {{item.name}}
+        </text>
+
+      </view>
+
+    </view>
+    <!-- Trip Details Panel (shown when route is calculated) -->
+    <view a:if="{{tripDetails}}" class="trip-panel">
+      <view class="panel-header">
+        <text class="panel-title">Détails du trajet</text>
+      </view>
+      <view class="trip-info">
+        <view class="info-row">
+          <text class="label">Distance:</text>
+          <text class="value">{{tripDetails.distance}} km</text>
+        </view>
+        <view class="info-row">
+          <text class="label">Durée:</text>
+          <text class="value">{{tripDetails.duration}} min</text>
+        </view>
+        <view class="info-row">
+          <text class="label">Prix:</text>
+          <text class="value price">{{tripDetails.estimatedPrice}} MAD</text>
+        </view>
+
+      </view>
+      <view class="action-buttons">
+        <button class="btn btn-primary" onTap="confirmTrip">Confirmer le trajet</button>
+        <button class="btn btn-secondary" onTap="modifyTrip">Modifier</button>
+      </view>
+
+    </view>
+    <view>
+      <view class="justify-between currentPosition">
+        <view class="flex-section" onTap="getCurrentPosition">
+          <image class="icon" mode="scaleToFill" src="/assets/images/currentposition.png" />
+          <text>Position actuelle</text>
+        </view>
+        <image class="icon" mode="scaleToFill" src="/assets/images/whiteclose.png" />
+      </view>
+      <view class="justify-between destination">
+        <view class="flex-section">
+          <image class="icon" mode="scaleToFill" src="/assets/images/search.png" />
+          <text class="grayText">Choisir une destination</text>
+        </view>
+        <image class="icon" mode="scaleToFill" src="/assets/images/whiteclose.png" />
+      </view>
+    </view>
+    <view class="courseType justify-between">
+      <!-- Private Section -->
+      <view class="flex-section" onTap="setPrivate">
+        <text class="{{switchedCourse === 'private' ? 'greenText' : 'grayText'}}"> Privatisé
+        </text>
+        <image class="courseTypeImg" mode="scaleToFill" src="{{switchedCourse === 'private' ? '/assets/images/green_client.png' : '/assets/images/gray_client.png'}}" />
+
+      </view>
+      <switch checked="{{switchedCourse === 'private'}}" color="#93c01f" onChange="onModeSwitchChange" />
+      <view class="flex-section" onTap="setShare">
+        <image class="courseTypeImg" mode="scaleToFill" src="{{switchedCourse === 'share' ? '/assets/images/green_taxi.png' : '/assets/images/gray_taxi.png'}}" />
+        <text class="{{switchedCourse === 'share' ? 'greenText' : 'grayText'}}"> Partagé
+        </text>
+
+      </view>
+
+    </view>
+
+  </view>
+  <!-- Loading Overlay -->
+  <view a:if="{{isLoading}}" class="loading-overlay">
+    <view class="loading-content">
+      <view class="spinner"></view>
+      <text class="loading-text">Calcul du trajet...</text>
+    </view>
+
+  </view>
+</view>
